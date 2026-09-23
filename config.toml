@@ -1,5 +1,5 @@
 # config.toml
 
 [location]
-lat = add your location
-lng = add your location
+lat = 28.6139
+lng = 77.2090

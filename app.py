@@ -19,7 +19,7 @@ st.set_page_config(
 config_manager = ConfigManager()
 lat, lng = config_manager.get_coordinates()
 accident_detector = AccidentDetector(config_manager.get_env_var('GEMINI_API_KEY'))
-hospital_service = HospitalService(config_manager.get_env_var('PLACES_API_KEY'))
+hospital_service = HospitalService()
 sms_service = SMSService(
     twilio_sid=config_manager.get_env_var('TWILIO_SID'),
     twilio_token=config_manager.get_env_var('TWILIO_TOKEN'),
